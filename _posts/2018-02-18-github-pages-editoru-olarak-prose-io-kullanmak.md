@@ -111,6 +111,7 @@ prose:
 ```         
 
 Yazıyı yayınlama düğmesine yıkladığınızda aşağıdaki yazı inceleme ekranı ve sağ tarafında yayınlama düğmesi (commit) görünecektir.
+
 ![prose.io-ile-yaziyi-yayinlama]({{site.baseurl}}/assets/media/prose.io-ile-yaziyi-yayinlama.PNG)
 
 Umarım yararlı olmuştur.
