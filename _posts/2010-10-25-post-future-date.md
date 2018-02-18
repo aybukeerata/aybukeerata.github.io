@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Post: Future Date"
-date: 9999-12-31
+date: 1999-12-31
 categories:
   - Post
 last_modified_at: 2017-03-09T12:45:25-05:00
@@ -12,3 +12,5 @@ This post lives in the future and is dated {{ page.date | date: "%c" }}. It shou
 ```bash
 jekyll build --future
 ```
+
+date: 9999-12-31 changed... to date: 1999-12-31
