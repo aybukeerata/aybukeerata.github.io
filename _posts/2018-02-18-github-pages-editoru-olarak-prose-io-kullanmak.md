@@ -9,7 +9,7 @@ tags:
   - Jekyll
   - Prose.io
 categories:
-  - Web uygulamaları
+  - web-uygulamalari
 ---
 Aşağıda örnek prose.io ekran görüntüsünü yer almaktadır.
 
