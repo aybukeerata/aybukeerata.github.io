@@ -4,6 +4,12 @@ published: true
 date: '2018-02-18 22:25 +0300'
 excerpt_separator: <!--more-->
 title: 'Github Pages Editörü Olarak Prose.io Kullanmak '
+categories:
+  - web applications
+tags:
+  - Github Pages
+  - Jekyll
+  - Prose.io
 ---
 Aşağıda örnek prose.io ekran görüntüsünü yer almaktadır.
 
