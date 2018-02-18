@@ -3,10 +3,10 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            Hydeout
-tagline:          'A Jekyll theme'
-description:      'The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.'
-url:              https://fongandrew.github.io/hydeout
+title:            Aybüke Erata
+tagline:          'Kişisel Web Sitem'
+description:      'Bazı ufak notlar'
+url:              https://aybukeerata.github.io
 baseurl:          # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
                   # If you want to move just the blog index pages but keep
@@ -14,8 +14,8 @@ baseurl:          # the optional subpath of your site, e.g. "/blog"
                   # sidebar_blog_link below.
 
 author:
-  name:           'Andrew Fong'
-  url:            https://twitter.com/fongandrewc
+  name:           'Aybüke Erata'
+  url:            https://twitter.com/...
 
 paginate:         5
 # paginate_path:    '/page:num'
@@ -25,6 +25,8 @@ plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Custom vars
 version:            3.5.3
@@ -34,4 +36,92 @@ sidebar_home_link:  true
                                 # set this to the root of the paginate_path
                                 # to enable a separate blog link.
 github:
-  repo:             https://github.com/fongandrew/hydeout
+  repo:             https://github.com/aybukeerata7
+  
+disqus:
+  shortname: aybukeerata
+
+google_analytics: 'UA-113478991-1'
+
+# languages: &languages
+#  - name: 'Türkçe'
+#    value: 'tr'
+#  - name: 'İngilizce'
+#    value: 'en'  
+    
+prose:
+  rooturl: "_posts"
+  siteurl: "https://erata.github.io/"
+  relativeLinks: 'https://erata.github.io/links.jsonp'
+  media: 'assets/media'
+  #ignore: ['CNAME', '_config.yml', '*.json', '.gitignore', 'readme.md', '*.xml', 'admin.html']
+  metadata:
+    _posts:
+    #  - name: "lang"
+    #    field:
+    #      element: "select"
+    #      label: "Select language"
+    #      placeholder: "Tükçe"
+    #      options: *languages
+    #      selected: "tr"
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Publish now"
+          help: "Keep this unchecked if you do not want to   publish the article right now"
+          value: "true"
+      - name: "layout"
+        field:
+          element: "hidden"
+          label: "Layout"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Enter title of the Article"
+          placeholder: "Enter Title"
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date"
+          value: "CURRENT_DATETIME"
+   #   - name: "author"
+   #     field:
+   #       element: "hidden"
+   #       value: "Aybüke Erata"
+      - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Add Category"
+          placeholder: "Add Category"
+          options:
+            - name: "Blog"
+              value: "blog"
+            - name: "Edge Case"
+              value: "Edge Case"              
+            - name: "Web Applications"
+              value: "web applications" 
+          alterable: true
+     #   field:
+     #     element: "hidden"
+     #     value: "blog"
+     #     alterable: "true"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Add Tags"
+          options:
+            - name: "Veri Güvenliği"
+              value: "veri guvenligi"
+            - name: "Program İnceleme"
+              value: "program inceleme"              
+            - name: "Bash Scripts"
+              value: "bash scripts"             
+            - name: "Günlük Hayat"
+              value: "gunluk hayat"   
+          alterable: true
+      - name: "excerpt_separator"
+        field:
+          element: "text"
+          value: "<!--more-->"
