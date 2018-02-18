@@ -10,4 +10,4 @@ title: Bilgi Güvenliği
 ---
 ```
 
-Posts get listed below here.
+Bilgi Güvenliği ile ilgili yazılar aşağıda listelenmiştir:
