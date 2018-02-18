@@ -95,12 +95,14 @@ prose:
           label: "Add Category"
           placeholder: "Add Category"
           options:
-            - name: "Blog"
-              value: "blog"
-            - name: "Edge Case"
-              value: "Edge Case"              
-            - name: "Web Applications"
-              value: "web applications" 
+            - name: "Bilgi Güvenliği"
+              value: "Bilgi Güvenliği"
+            - name: "Linux/Bash Script"
+              value: "Linux/Bash Script"  
+            - name: "Mobil Programlama"
+              value: "Mobil Programlama"
+            - name: "Diğer"
+              value: "Diğer"  
           alterable: true
      #   field:
      #     element: "hidden"
@@ -112,14 +114,12 @@ prose:
           label: "Add Tags"
           placeholder: "Add Tags"
           options:
-            - name: "Veri Güvenliği"
-              value: "veri guvenligi"
+            - name: "Android"
+              value: "Android"
+            - name: "KALI"
+              value: "KALI"  
             - name: "Program İnceleme"
-              value: "program inceleme"              
-            - name: "Bash Scripts"
-              value: "bash scripts"             
-            - name: "Günlük Hayat"
-              value: "gunluk hayat"   
+              value: "Program İnceleme"   
           alterable: true
       - name: "excerpt_separator"
         field:
