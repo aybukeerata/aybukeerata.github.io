@@ -23,6 +23,7 @@ Prose.io ile resim eklemek oldukça kolay. Daha önde eklenilen resimlerin sağ 
 
 Yazınıza belli başlı metatag alanlarının doğrudan eklenmesini sağlayıp yazıya odaklanabilirsiniz. Örnek bir prose.io ayarı şu şekilde (tabi ki siz aşağıda paylaştığımız kaynaklar ile çok daha detaylı ayarlar yapabilirsiniz):
 
+````
 prose:
   rooturl: "_posts"
   siteurl: "https://erata.github.io/"
@@ -72,6 +73,7 @@ prose:
         field:
           element: "text"
           value: "<!--more-->"  
+````          
 
 ![prose.io-ile-yaziyi-yayinlama]({{site.baseurl}}/assets/media/prose.io-ile-yaziyi-yayinlama.PNG)
 
