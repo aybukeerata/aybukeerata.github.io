@@ -116,7 +116,7 @@ Yazıyı yayınlama düğmesine yıkladığınızda aşağıdaki yazı inceleme 
 
 Umarım yararlı olmuştur.
 
-## Kaynaklar ve Örnek prose.io ayarları
+### Kaynaklar ve Örnek prose.io ayarları
 - [https://github.com/prose/prose/wiki/Getting-Started](https://github.com/prose/prose/wiki/Getting-Started)
 - [https://github.com/prose/prose/wiki/Prose-Configuration](https://github.com/prose/prose/wiki/Prose-Configuration)
 - [https://github.com/MailTape/MailTape.github.io/blob/master/_config.yml](https://github.com/MailTape/MailTape.github.io/blob/master/_config.yml)
