@@ -85,6 +85,11 @@ prose:
           element: "text"
           label: "Date"
           value: "CURRENT_DATETIME"
+   #  - name: "last_modified_at"
+   #    field:
+   #      element: "text"
+   #      label: "Date"
+   #      value: "CURRENT_DATETIME"
    #   - name: "author"
    #     field:
    #       element: "hidden"
