@@ -101,13 +101,15 @@ prose:
           placeholder: "Add Category"
           options:
             - name: "Bilgi Güvenliği"
-              value: "Bilgi Güvenliği"
+              value: "bilgi-güvenligi"
             - name: "Linux/Bash Script"
-              value: "Linux/Bash Script"  
+              value: "linux-bash-script"
             - name: "Mobil Programlama"
-              value: "Mobil Programlama"
+              value: "mobil-programlama"  
+            - name: "Web Uygulamaları"
+              value: "web-uygulamalari"
             - name: "Diğer"
-              value: "Diğer"  
+              value: "Diger"  
           alterable: true
      #   field:
      #     element: "hidden"
