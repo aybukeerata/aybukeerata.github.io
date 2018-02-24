@@ -1,6 +1,6 @@
 ---
 layout: category
-published: false
+published: true
 title: Edge Case
 ---
 
