@@ -18,6 +18,7 @@ module Jekyll
           :title       => slug,
           :i_day       => date.strftime("%-d"),
           :i_month     => date.strftime("%-m"),
+          :tags        => (tags || []).map { |c| Utils.slugify(c) }.join('/'),
           :categories  => (categories || []).map { |c| Utils.slugify(c) }.join('/'),
           :short_month => date.strftime("%b"),
           :short_year  => date.strftime("%y"),
