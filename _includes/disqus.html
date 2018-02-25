@@ -1,37 +1,44 @@
+{% if site.disqus.shortname %}
+  <div id="disqus_thread">
+    <button class="disqus-load btn-block" onClick="loadDisqusComments()">
+      + Yorumları Yükle 
+    </button>
+  </div>
+  <script>
 
-
-
-<!-- Disqus commenting system (https://disqus.com/admin/universalcode/) -->
-<link rel="dns-prefetch" href="//{{ site.disqus.shortname }}.disqus.com">
-<link rel="preload" href="//{{ site.disqus.shortname }}.disqus.com/count.js" as="script">
-<link rel="preload" href="//{{ site.disqus.shortname }}.disqus.com/embed.js" as="script">
-
-<div class="comments clearfix">
-  <button id="js-button-comment" class="disqus-load btn-block" onclick="loadDisqusComments()">
-    <span class="svg-icon icon-comment svg-baseline" aria-hidden="true">
-      <svg><use xlink:href="/assets/icons/icons.min.svg#icon-comment"></use></svg>
-    </span>
-    <span class="disqus-comment-count" data-disqus-url="{{ page.url | replace:'/index.html','/' | prepend: site.url }}">Leave a comment</span>
-  </button>
-
-  <div id="disqus_thread"></div>
-
-  <noscript><p>Please enable JavaScript to view the comments.</p></noscript>
-</div><!-- /.comments -->
-
-<script id="dsq-count-scr" src="//{{ site.disqus.shortname }}.disqus.com/count.js" async></script>
-
-<script>
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW
+  *  TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT:s
+  *  https://disqus.com/admin/universalcode/#configuration-variables
+  */
   var disqus_config = function () {
-    this.page.url = '{{ page.url | replace:'/index.html','/' | prepend: site.url }}';
-  };
-  function loadDisqusComments() {
-    document.getElementById('js-button-comment').setAttribute('hidden', 'true');
+    this.page.url = "{{ page.url | absolute_url }}";
+    this.page.identifier = "{{ page.guid or page.id }}" ||
+                           "{{ page.url | absolute_url }}";
+  }
+  function loadDisqusComments() { // DON'T EDIT BELOW THIS LINE
     var d = document, s = d.createElement('script');
     s.src = '//{{ site.disqus.shortname }}.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
   }
-</script>
+  </script>
+  <noscript>
+    Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript">comments powered by Disqus</a>.
+  </noscript>
 
+{% elsif jekyll.environment != "production" %}
+  <p>
+    You are seeing this because your Disqus shortname is not properly set. To
+    configure Disqus, you should edit your <code>_config.yml</code> to include
+    either a <code>disqus.shortname</code> variable.
+  </p>
+
+  <p>
+    If you do not wish to use Disqus, override the
+    <code>comments.html</code> partial for this theme.
+  </p>
+{% endif %}
 
