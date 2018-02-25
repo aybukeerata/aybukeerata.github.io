@@ -2,7 +2,7 @@
 layout: category
 published: true
 title: Edge Case
-permalink: /edge-case/
+# permalink: /edge-case/
 ---
 
 Sample category page. You need to create a page for each category.
