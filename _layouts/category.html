@@ -7,7 +7,7 @@ layout: page
 {% endunless %}
 
 <ul class="posts-list">
-  {% assign category = page.category | default: page.title %}
+  {% assign category = page.category %}
   {% for post in site.categories[category] %}
     <li>
       <h3>
