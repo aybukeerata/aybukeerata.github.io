@@ -1,6 +1,7 @@
 
 
 
+
 <!-- Disqus commenting system (https://disqus.com/admin/universalcode/) -->
 <link rel="dns-prefetch" href="//{{ site.disqus.shortname }}.disqus.com">
 <link rel="preload" href="//{{ site.disqus.shortname }}.disqus.com/count.js" as="script">
@@ -20,7 +21,7 @@
   var disqus_config = function () {
     this.page.url = '{{ page.url | replace:'/index.html','/' | prepend: site.url }}';
   };
-  function initDisqus_onClick() {
+  function loadDisqusComments() {
     document.getElementById('js-button-comment').setAttribute('hidden', 'true');
     var d = document, s = d.createElement('script');
     s.src = '//{{ site.disqus.shortname }}.disqus.com/embed.js';
