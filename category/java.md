@@ -9,6 +9,6 @@ layout: category
 title: Java
 ---
 ```
-Özellikle yetkin nir java microservis kütüphanesi olan [Qbit](https://github.com/advantageous/qbit)  ile nasıl microservis geliştirilir ona değineceğiz. 
+Özellikle yetkin bir java microservis kütüphanesi olan [Qbit](https://github.com/advantageous/qbit) ile nasıl microservis geliştirilir ona değineceğiz. 
 
 Java ile ilgili yazılar aşağıda listelenmiştir:
