@@ -1,6 +1,6 @@
 ---
 layout: category
-published: true
+published: false
 title: Edge Case
 category: Edge Case
 permalink: /edge-case/
